@@ -1,0 +1,6 @@
+function SimpleSymbols(str) { 
+	if(str.match(/[a-z]/ig) !=null && str.match(/\+[a-z](?=\+)/ig) !=null){
+      return str.match(/[a-z]/ig).length == str.match(/\+[a-z](?=\+)/ig).length;
+    }
+  return false;
+}
